@@ -1,7 +1,7 @@
 <template>
   <main>
     <button @click="Login">Login</button>
-    <h4> Your Name is: {{ name }}</h4>
+    <h4> User Name is: {{ name }}</h4>
     <div v-if="store.user?.profile?.name">
       <button @click="logout">Log out</button>
     </div>
