@@ -7,10 +7,10 @@ class AuthService {
     this.userManager = new UserManager({
       authority: 'https://dev-y41onbvbhxgt227i.eu.auth0.com',
       client_id: 'zaY81M2g12CMj3WNCeEDxGkVJDLq5n1t',
-      redirect_uri: 'http://localhost:7070/callback',
-      post_logout_redirect_uri: 'http://localhost:7070',
+      redirect_uri: window.location.origin + 'callback',
+      post_logout_redirect_uri: window.location.origin,
       response_type: 'code',
-      scope: 'openid profile' 
+      scope: 'openid profile'
       // client_secret: '7Hp9mVQOf51ig1j2g6teYZ4bDqPSpP4Gx9-XqUajQKPbPnCcCd5WumXZ0COUSO69'
     })
   }
